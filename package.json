@@ -11,12 +11,12 @@
         "Other"
     ],
     "activationEvents": [
-        "onCommand:extension.format"
+        "onCommand:elm-format.format"
     ],
     "main": "./out/src/extension",
     "contributes": {
         "commands": [{
-            "command": "extension.format",
+            "command": "elm-format.format",
             "title": "Elm: Format"
         }]
     },
