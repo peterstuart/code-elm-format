@@ -12,7 +12,7 @@
             "sourceMaps": true,
             "outDir": "${workspaceRoot}/out/src",
             "preLaunchTask": "npm"
-        },
+        }, 
         {
             "name": "Launch Tests",
             "type": "extensionHost",
