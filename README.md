@@ -1,13 +1,21 @@
-# README
-## This is the README for your extension "elm-format"
-You can author your README using Visual Studio Code.  Here are some useful editor keyboard shortcuts:
+# VSCode Elm Format
 
-* Split the editor (`Cmd+\` on OSX or `Ctrl+\` on Windows and Linux)
-* Toggle preview (`Shift+CMD+V` on OSX or `Shift+Ctrl+V` on Windows and Linux)
-* Press `Ctrl+Space` (Windows, Linux) or `Cmd+Space` (OSX) to see a list of Markdown snippets
+This extensions allows you to run `elm-format` on visual studio code.
 
-### For more information
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
+This is just a simple extensions that execute `elm-format` if it exists on your global PATH.
+You will have to install `elm-format` and set the executable in your global PATH first before you can use this extension.
 
-**Enjoy!**
+For more information on how to install `elm-path` please refer to their [installation guide](https://github.com/avh4/elm-format#installation)
+
+## Installation
+Install this extension using VSCode command pallete:
+```
+ext install elm-format
+```
+
+## How to Use
+You can run `elm-format` by using this command:
+```
+Elm: Format
+```
+
