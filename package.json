@@ -2,7 +2,7 @@
   "name": "elm-format",
   "displayName": "elm-format",
   "description": "Format your elm code using elm-format",
-  "version": "0.0.3",
+  "version": "0.1.0",
   "publisher": "abadi199",
   "icon": "images/elm-logo.png",
   "engines": {
@@ -12,16 +12,29 @@
     "Other"
   ],
   "activationEvents": [
-    "onCommand:elm-format.format"
+    "onCommand:elm-format.format",
+    "onLanguage:elm"
   ],
   "main": "./out/src/extension",
+    
   "contributes": {
     "commands": [
       {
         "command": "elm-format.format",
         "title": "Elm: Format"
       }
-    ]
+    ],
+    "configuration": {
+			"type": "object",
+			"title": "Elm-format configuration",
+			"properties": {
+				"elm-format.formatOnSave": {
+					"type": "boolean",
+					"default": false,
+					"description": "Run elm-format on save."
+				}
+			}
+		}
   },
   "scripts": {
     "vscode:prepublish": "node ./node_modules/vscode/bin/compile",

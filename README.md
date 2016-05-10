@@ -18,4 +18,10 @@ You can run `elm-format` by using this command:
 ```
 Elm: Format
 ```
+or you can also run elm-format whenever you save the file by enabling the `formatOnSave' option.
 
+## Configuration
+- **elm-format.formatOnSave**
+  - type: "boolean"
+  - default: false
+  - description: "Run elm-format on save.
