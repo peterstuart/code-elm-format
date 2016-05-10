@@ -2,8 +2,9 @@
   "name": "elm-format",
   "displayName": "elm-format",
   "description": "Format your elm code using elm-format",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "publisher": "abadi199",
+  "icon": "images/elm-logo.png",
   "engines": {
     "vscode": "^1.0.0"
   },
