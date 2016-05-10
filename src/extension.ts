@@ -59,7 +59,9 @@ export function activate(context: vscode.ExtensionContext) {
 		const active = vscode.window.activeTextEditor;
 		if (!active) return;
 		if (!active.document) return;
-		const range = new vscode.Range(0, 0, Number.MAX_VALUE, Number.MAX_VALUE);
+		const endLine = active.document.lineCount;
+		const endCharacter = active.document.getText().length;
+		const range = new vscode.Range(0, 0, endLine, endCharacter);
 
 		format(active.document, range)
 			.then(newText => {
