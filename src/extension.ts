@@ -1,15 +1,15 @@
 'use strict';
 import * as vscode from 'vscode';
-import * as tmp from 'tmp';
 import * as fs from 'fs';
 import * as cp from 'child_process';
+import * as tmp from "tmp";
 
 const dumpError = e => {
 	if (e) console.log('elm-format err:', e);
 	return [];
 };
 
-function format(document, range) {
+function format(document, range) : Promise<string> {
 	const originalText = document.getText(document.validateRange(range));
 		return new Promise((resolve, reject) => {
 		tmp.file({ postfix: '.elm' }, (err, path, fd, cleanupCallback) => {
